@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".ActivityFormTanaman">
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:background="@color/colorUtama"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="0dp"
+        android:text="Logout" />
+
+    <EditText
+        android:id="@+id/namaTanaman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_logout"
+        android:text="Padi"
+        android:textColor="@color/colorUtama"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnPembibitan"
+        android:layout_width="213dp"
+        android:layout_height="58dp"
+        android:background="@color/colorUtama"
+        android:layout_below="@id/namaTanaman"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="266dp"
+        android:text="Pembibitan"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/btnPenanaman"
+        android:layout_width="202dp"
+        android:layout_height="61dp"
+        android:background="@color/colorSecond"
+        android:layout_below="@+id/btnPembibitan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Penanaman"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/btnPemupukan"
+        android:layout_width="202dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/btnPenanaman"
+        android:layout_alignStart="@+id/btnPenanaman"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="21dp"
+        android:background="@color/colorThird"
+        android:text="Pemupukan"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/btnPanen"
+        android:layout_width="204dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/btnPemupukan"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="-85dp"
+        android:layout_toStartOf="@+id/btn_logout"
+        android:background="@color/colorFour"
+        android:text="Panen"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/btnPascaPanen"
+        android:layout_width="196dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/btnPanen"
+        android:background="@color/colorFifth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Pasca-Panen"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

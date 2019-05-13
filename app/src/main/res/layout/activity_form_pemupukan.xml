@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".FormPemupukan"
+    android:padding="40dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PEMUPUKAN"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/pemupukan"
+        android:id="@+id/Pemupukan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durasi Pemupukan"
+        android:textStyle="italic"
+        android:layout_marginTop="40dp"
+        android:id="@+id/durasi"
+        android:textColor="#C0392B"
+        android:layout_below="@id/Pemupukan"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/durasi"
+        android:id="@+id/durasiPemupukan"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#C0392B"
+        android:id="@+id/deskripsi"
+        android:layout_below="@+id/durasiPemupukan"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/deskripsi"
+        android:id="@+id/deskripsiPemupukan"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Pupuk"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#C0392B"
+        android:id="@+id/jenisPupuk"
+        android:layout_below="@+id/deskripsiPemupukan"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/jenisPupuk"
+        android:id="@+id/jenisPemupukan"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alat dan Bahan"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:id="@+id/alatDanBahan"
+        android:textColor="#C0392B"
+        android:layout_below="@+id/jenisPemupukan"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/alatDanBahan"
+        android:id="@+id/alatDanBahanPemupukan"
+        />
+
+    <Button
+        android:id="@+id/btnSavepupuk"
+        android:layout_width="142dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/alatDanBahanPemupukan"
+        android:layout_alignEnd="@+id/Pemupukan"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/panen"
+        android:text="Simpan" />
+
+</RelativeLayout>

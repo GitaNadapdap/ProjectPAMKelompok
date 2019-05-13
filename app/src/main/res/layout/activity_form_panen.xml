@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".FormPanen">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PANEN"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/panen"
+        android:id="@+id/Panen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durasi Panen"
+        android:textStyle="italic"
+        android:layout_marginTop="40dp"
+        android:id="@+id/durasi"
+        android:textColor="#C0392B"
+        android:layout_below="@id/Panen"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/durasi"
+        android:id="@+id/durasiPanen"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#C0392B"
+        android:id="@+id/deskripsi"
+        android:layout_below="@+id/durasiPanen"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/deskripsi"
+        android:id="@+id/deskripsiPanen"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berat Bersih"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#C0392B"
+        android:id="@+id/bBersih"
+        android:layout_below="@+id/deskripsiPanen"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/bBersih"
+        android:id="@+id/bBersihPanen"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berat Kotor"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#C0392B"
+        android:id="@+id/bKotor"
+        android:layout_below="@+id/bBersihPanen"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/bKotor"
+        android:id="@+id/bKotorPanen"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alat dan Bahan"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:id="@+id/alatDanBahan"
+        android:textColor="#C0392B"
+        android:layout_below="@+id/bKotorPanen"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/alatDanBahan"
+        android:id="@+id/alatDanBahanPanen"
+        />
+
+    <Button
+        android:id="@+id/btnSavePanen"
+        android:layout_width="143dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/alatDanBahanPanen"
+        android:layout_alignEnd="@+id/Panen"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/pasca_panen"
+        android:text="Simpan" />
+
+</RelativeLayout>

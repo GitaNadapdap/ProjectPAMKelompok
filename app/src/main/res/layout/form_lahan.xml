@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorThird"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/formLahan1"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="125dp"
+        android:textColor="@color/colorWhite"
+        android:ems="10"
+        android:hint="Jenis Lahan"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/formLahan2"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formLahan1"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Ukuran Lahan"
+        android:inputType="" />
+
+    <EditText
+        android:id="@+id/formLahan3"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formLahan2"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Jenis Tanaman" />
+
+    <EditText
+        android:id="@+id/formLahan4"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formLahan3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="33dp"
+        android:hint="Lokasi Lahan" />
+
+    <EditText
+        android:id="@+id/formLahan5"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formLahan4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="33dp"
+        android:hint="Nama Pemilik Lahan" />
+
+
+    <EditText
+        android:id="@+id/formLahan7"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formLahan5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="33dp"
+        android:hint="Contact Pemilik Lahan" />
+
+</RelativeLayout>

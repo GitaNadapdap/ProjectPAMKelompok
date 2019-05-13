@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="40dp"
+    tools:context=".FormPembibitan">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PEMBIBITAN"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/pembibitan"
+        android:id="@+id/Pembibitan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durasi Pembibitan"
+        android:textStyle="italic"
+        android:layout_marginTop="40dp"
+        android:id="@+id/durasi"
+        android:textColor="#C0392B"
+        android:layout_below="@id/Pembibitan"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/durasi"
+        android:id="@+id/durasiPembibitan"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#C0392B"
+        android:id="@+id/deskripsi"
+        android:layout_below="@+id/durasiPembibitan"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/deskripsi"
+        android:id="@+id/deskripsiPembibitan"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Bibit"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#C0392B"
+        android:id="@+id/jenisBibit"
+        android:layout_below="@+id/deskripsiPembibitan"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/jenisBibit"
+        android:id="@+id/jenisPembibitan"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alat dan Bahan"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:id="@+id/alatDanBahan"
+        android:textColor="#C0392B"
+        android:layout_below="@+id/jenisPembibitan"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/alatDanBahan"
+        android:id="@+id/alatDanBahanBibit"
+        />
+
+    <Button
+        android:id="@+id/btnSaveBibit"
+        android:layout_width="138dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/alatDanBahanBibit"
+        android:layout_alignEnd="@+id/Pembibitan"
+        android:layout_marginTop="59dp"
+        android:background="@drawable/penanaman"
+        android:text="Simpan" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".FormPascaPanen">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PASCA PANEN"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/pasca_panen"
+        android:id="@+id/PascaPanen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durasi Pembersihan"
+        android:textStyle="italic"
+        android:layout_marginTop="40dp"
+        android:id="@+id/durasi"
+        android:textColor="#C0392B"
+        android:layout_below="@id/PascaPanen"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/durasi"
+        android:id="@+id/durasiPascaPanen"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durasi Persiapan Lahan"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#C0392B"
+        android:id="@+id/durasiPpanen"
+        android:layout_below="@+id/durasiPascaPanen"
+        />
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_below="@+id/durasiPpanen"
+    android:id="@+id/durasiPsiPanen"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#C0392B"
+        android:id="@+id/descPsPanen"
+        android:layout_below="@+id/durasiPsiPanen"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/descPsPanen"
+        android:id="@+id/descPsiPanen"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alat dan Bahan"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:id="@+id/alatDanBahan"
+        android:textColor="#C0392B"
+        android:layout_below="@+id/descPsiPanen"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/alatDanBahan"
+        android:id="@+id/alatDanBahanPasca"
+        />
+
+    <Button
+        android:id="@+id/btnSavePasca"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/alatDanBahanPasca"
+        android:layout_alignEnd="@+id/PascaPanen"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/pemupukan"
+        android:text="Simpan" />
+
+</RelativeLayout>
